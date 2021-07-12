@@ -19,9 +19,28 @@ main{
     margin-top: 21px;
     border-radius: 5px;
 }
-header{
-    width: 100%;
-    background: #562EFF;
+header{  
+    background: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containers{
+    background: blue;
+    width: 935px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.containers li{
+    list-style: none;
+    margin-right: 10px;
+}
+.containers li a{
+    color: white;
+    text-decoration: none;
 }
 hr{
     border: 1px solid #D1D1D1;
@@ -30,22 +49,6 @@ hr{
 /* top players items */
 
 /* menu items here */
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 94px;
-    width: 885px;
-    margin: auto;
-}
-.menu a{
-    text-decoration: none;
-    margin-right: 30px;
-    color: white;
-}
-.menu a:last-child{
-    margin-right: 0;
-}
 
 .section-title{
     color: #562EFF;
@@ -158,6 +161,11 @@ hr{
 Media query start here
 ----------------------- */
 @media only screen and (max-width:688px) {
+    .containers{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
     .container{
         width: 100%;
     }
@@ -175,6 +183,12 @@ Media query start here
     }
 }
 @media only screen and (min-width:689px) and (max-width:992px) {
+    
+    .containers{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
 
     .container{
         width: 100%;
